@@ -1,4 +1,6 @@
-/*This file will contain the fonts using @font-face rule*/
 @font-face {
-
+  font-family: "Jet-Brains-Mono";
+  src: url("../assets/fonts/static/JetBrainsMono-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
 }

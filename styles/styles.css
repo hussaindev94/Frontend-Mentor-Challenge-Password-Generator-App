@@ -4,10 +4,10 @@
 
 /*HTML Styles*/
 html{
-    font-size: 62.5%; /*This will make the base font size = 10px = 1rem, any px value converte it by 10 will result into rem equvalent value*/
+    font-size: 62.5%;
 }
 
 /*Body Styles*/
 body{
-    font-size: 1.4rem; /*This will = 14px on the base line that we defined upove.*/
+    font-size: 1.4rem;
 }
