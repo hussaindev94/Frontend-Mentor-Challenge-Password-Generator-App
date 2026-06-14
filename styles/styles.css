@@ -64,20 +64,301 @@
 /*HTML Styles*/
 html {
   font-size: 62.5%;
+  letter-spacing: 0rem;
 }
 
 /*Body Styles*/
 body {
   font-size: 1.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-gray-950);
 }
 
+/*Card styles*/
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
+  gap: var(--spacing-200);
+  margin-inline: var(--spacing-200);
+  margin-block: 6.5rem 6.3rem;
+
+  width: 34.3rem;
+}
+.card-title {
+  font-family: var(--text-preset-4-font-family);
+  font-size: var(--text-preset-4-font-size);
+  line-height: var(--text-preset-4-line-height);
+  text-align: center;
+  color: var(--color-gray-600);
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: var(--spacing-200);
+}
+.password-result {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+
+  background-color: var(--color-gray-800);
+}
+.password-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  padding: var(--spacing-200);
+}
+/*The default color is gray-700*/
+.generated-password {
+  color: var(--color-gray-700);
+  font-family: var(--text-preset-2-font-family);
+  font-size: var(--text-preset-2-font-size);
+  line-height: var(--text-preset-2-line-height);
+}
+.password-copy {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-100);
+}
+/*The default state for this is hidden*/
+.copy {
+  color: var(--color-green-200);
+  font-family: var(--text-preset-4-font-family);
+  font-size: var(--text-preset-4-font-size);
+  line-height: var(--text-preset-4-line-height);
+}
+/*Change it when styling user interactions*/
+.copy-icon path {
+  fill:;
+}
+/*------------------------------------------------------------*/
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  background-color: var(--color-gray-800);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  align-self: stretch;
+  gap: var(--spacing-400);
+  padding: var(--spacing-200);
+}
+/*Password length wrapper styles*/
+.password-length-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+.password-length-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: var(--spacing-100);
+}
+.password-length-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+}
+.password-length {
+  color: var(--color-gray-200);
+  font-family: var(--text-preset-4-font-family);
+  font-size: var(--text-preset-4-font-size);
+  line-height: var(--text-preset-4-line-height);
+}
+.password-length-number {
+  color: var(--color-green-200);
+  font-family: var(--text-preset-2-font-family);
+  font-size: var(--text-preset-2-font-size);
+  line-height: var(--text-preset-2-line-height);
+}
+.password-length-slider-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.password-length-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: var(--spacing-100);
+  background: var(--color-gray-850);
+  outline: none;
+}
+
+.password-length-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--color-gray-200);
+  border-radius: 50%;
+  border: 0.2rem solid transparent;
+}
+.password-length-slider::-moz-range-thumb {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--color-gray-200);
+  border-radius: 50%;
+  border: 0.2rem solid transparent;
+}
+/*Password options container styles*/
+.password-options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.password-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--spacing-200);
+}
+.checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--spacing-200);
+}
+.checkboxes input[type="checkbox"] {
+  appearance: none;
+  --webkit-appearance: none;
+  margin: 0rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0.3rem solid var(--color-gray-200);
+  display: grid;
+  place-content: center;
+}
+.checkboxes input[type="checkbox"]::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+}
+.checkboxes input[type="checkbox"]:checked {
+  background: url(../assets/images/icon-check.svg) no-repeat 50% 50%
+    var(--color-green-200);
+  border: 0.3rem solid var(--color-green-200);
+}
+.checkbox-label {
+  color: var(--color-gray-200);
+  font-family: var(--text-preset-4-font-family);
+  font-size: var(--text-preset-4-font-size);
+  line-height: var(--text-preset-4-line-height);
+}
+/*Strength container styles*/
+.strength-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+
+  gap: var(--spacing-200);
+}
+.strength-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+
+  padding: 1.4rem var(--spacing-200);
+  background-color: var(--color-gray-850);
+}
+.strength-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  gap: var(--spacing-700);
+}
+.strength-display p {
+  color: var(--color-gray-600);
+  font-family: var(--text-preset-4-font-family);
+  font-size: var(--text-preset-4-font-size);
+  line-height: var(--text-preset-4-font-family);
+}
+.strength-status {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--spacing-200);
+}
+.strength-level {
+  /*In the styling for the user enteractions play with the opacity not the hidden or dispaly props*/
+  /* opacity: 0; */
+  color: var(--color-gray-200);
+  font-family: var(--text-preset-3-font-family);
+  font-size: var(--text-preset-3-font-size);
+  line-height: var(--text-preset-3-font-family);
+}
+.strength-bars {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  gap: var(--spacing-100);
+}
+.bars {
+  display: inline-block;
+  width: 1rem;
+  height: 2.8rem;
+
+  border: 0.2rem solid var(--color-gray-200);
+}
+.generate-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  gap: var(--spacing-200);
+  height: 5.6rem;
+
+  border: none;
+  background: var(--color-green-200);
+
+  color: var(--color-gray-800);
+
+  font-family: var(--text-preset-4-font-family);
+  font-size: var(--text-preset-4-font-size);
+  line-height: var(--text-preset-4-font-family);
+}
 /*Footer styles*/
 .footer {
   font-size: 1.2rem;
   text-align: center;
-
+  color: var(--color-orange-400);
   & a {
-    color: hsl(228, 45%, 44%);
+    color: var(--color-green-200);
   }
 }

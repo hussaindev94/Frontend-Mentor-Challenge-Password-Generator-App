@@ -23,22 +23,93 @@
  <script defer src="./script.js"></script>
   <title>Frontend Mentor | Password generator app</title>
 </head>
+
 <body>
 
-  Password Generator
+  <main class="main card">
+    <h1 class="card-title">
+      Password Generator
+    </h1>
 
-  P4$5W0rD!
+    <section class="card-content">
 
-  Character Length
+      <section class="password-result">
+        <div class="password-display">
+          <p class="generated-password">P4$5W0rD!</p>
+          <div class="password-copy">
+            <span class="copy" >COPIED</span>
+            <svg class="copy-icon" width="21" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.341 3.091 17.909.659A2.25 2.25 0 0 0 16.319 0H8.25A2.25 2.25 0 0 0 6 2.25V4.5H2.25A2.25 2.25 0 0 0 0 6.75v15A2.25 2.25 0 0 0 2.25 24h10.5A2.25 2.25 0 0 0 15 21.75V19.5h3.75A2.25 2.25 0 0 0 21 17.25V4.682a2.25 2.25 0 0 0-.659-1.591ZM12.469 21.75H2.53a.281.281 0 0 1-.281-.281V7.03a.281.281 0 0 1 .281-.281H6v10.5a2.25 2.25 0 0 0 2.25 2.25h4.5v1.969a.282.282 0 0 1-.281.281Zm6-4.5H8.53a.281.281 0 0 1-.281-.281V2.53a.281.281 0 0 1 .281-.281H13.5v4.125c0 .621.504 1.125 1.125 1.125h4.125v9.469a.282.282 0 0 1-.281.281Zm.281-12h-3v-3h.451c.075 0 .147.03.2.082L18.667 4.6a.283.283 0 0 1 .082.199v.451Z"
+                fill="#A4FFAF" />
+            </svg>
+          </div>
 
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
+        </div>
+      </section>
 
-  Strength
+      <section class="form-container">
 
-  Generate
+        <form action="" class="form">
+
+          <section class="password-length-section">
+            <div class="password-length-wrapper">
+              <div class="password-length-container">
+                <label class="password-length" for="character-length">Charachter Length</label>
+                <span class="password-length-number">0</span>
+              </div>
+              <div class="password-length-slider-container">
+                <input type="range" name="character-length" id="character-length" class="password-length-slider" min="0" max="50" step="1" value="0">
+              </div>
+            </div>
+          </section>
+
+          <section class="password-options-container">
+            <div class="password-options">
+              <div class="checkboxes">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label class="checkbox-label" for="checkbox1">Include Uppercase Letters</label>
+              </div>
+              <div class="checkboxes">
+                <input type="checkbox" name="checkbox2" id="checkbox2">
+                <label class="checkbox-label" for="checkbox2">Include Lowercase Letters</label>
+              </div>
+              <div class="checkboxes">
+                <input type="checkbox" name="checkbox3" id="checkbox3">
+                <label class="checkbox-label" for="checkbox3">Include Numbers</label>
+              </div>
+              <div class="checkboxes">
+                <input type="checkbox" name="checkbox4" id="checkbox4">
+                <label class="checkbox-label" for="checkbox4">Include Symbols</label>
+              </div>
+            </div>
+          </section>
+
+          <section class="strength-container">
+            <div class="strength-content">
+              <div class="strength-display">
+                <p>STRENGTH</p>
+                <div class="strength-status">
+                  <span class="strength-level">MEDIUM</span>
+                  <div class="strength-bars">
+                    <div class="bars bar1"></div>
+                    <div class="bars bar2"></div>
+                    <div class="bars bar3"></div>
+                    <div class="bars bar4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="generate-button-container">GENERATE
+              <svg class="generate-button-icon" width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z" />
+              </svg>
+            </button>
+          </section>
+        </form>
+      </section>
+    </section>
+  </main>
 
 <footer class="footer">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend
