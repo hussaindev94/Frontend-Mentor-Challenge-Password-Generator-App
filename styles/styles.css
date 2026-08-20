@@ -22,10 +22,10 @@
   --color-gray-700: hsl(248, 5%, 34%);
   --color-gray-600: hsl(251, 9%, 53%);
   --color-gray-200: hsl(252, 11%, 91%);
-  --color-green-200: hsl(127, 100%, 82%);
-  --color-yellow-300: hsl(42, 91%, 68%);
-  --color-orange-400: hsl(13, 95%, 66%);
-  --color-red-500: hsl(0, 91%, 63%);
+  --color-green-200: #a3ffae;
+  --color-yellow-300: #f8cb63;
+  --color-orange-400: #fb7a56;
+  --color-red-500: #f74b4b;
   --color-gradient: linear-gradient(
     to right,
     hsl(248, 17%, 9%),
@@ -141,6 +141,9 @@ body {
   font-family: var(--text-preset-4-font-family);
   font-size: var(--text-preset-4-font-size);
   line-height: var(--text-preset-4-line-height);
+}
+.hidde-copy-text {
+  visibility: hidden;
 }
 /*Change it when styling user interactions*/
 .copy-icon path {
