@@ -157,6 +157,7 @@ body {
   justify-content: center;
   align-self: stretch;
   background-color: var(--color-gray-800);
+  height: fit-content;
 }
 .form {
   display: flex;
@@ -358,6 +359,7 @@ body {
 }
 /*Footer styles*/
 .footer {
+  margin: 10rem;
   font-size: 1.2rem;
   text-align: center;
   color: var(--color-orange-400);

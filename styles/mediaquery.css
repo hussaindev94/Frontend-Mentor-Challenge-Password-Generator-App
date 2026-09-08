@@ -1,5 +1,131 @@
 /*Tablet display range*/
 @media (min-width: 44em) {
+  body {
+    padding: 19.7rem 11.4rem;
+  }
+  .card {
+    gap: 3.2rem;
+    width: 54rem;
+    height: 69rem;
+    margin: unset;
+  }
+  .card-title {
+    font-family: "Jet-Brains-Mono";
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
+  .card-content {
+    gap: 2.4rem;
+  }
+  .password-result {
+    padding: 1.6rem 3.2rem;
+    gap: 0.8rem;
+  }
+  .password-display {
+    padding: unset;
+  }
+  .generated-password {
+    font-family: "Jet-Brains-Mono";
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
+  .password-copy {
+    gap: 1.6rem;
+    font-family: "Jet-Brains-Mono";
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
+  .form-container {
+    padding: 2.4rem 3.2rem;
+    gap: 0.8rem;
+    height: 48rem;
+    justify-content: flex-start;
+    height: 48rem;
+  }
+  .form {
+    padding: unset;
+  }
+  .password-length-wrapper {
+    gap: 1.6rem;
+  }
+  .password-length {
+    font-family: "Jet-Brains-Mono";
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
+  .password-length-number {
+    font-family: "Jet-Brains-Mono";
+    font-size: 3.2rem;
+    line-height: 4.1rem;
+    font-style: normal;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
+  .checkboxes {
+    gap: 2.4rem;
+  }
+  .checkbox-label {
+    font-family: "Jet-Brains-Mono";
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
+  .strength-container {
+    gap: 3.2rem;
+  }
+  .strength-display {
+    height: 3.4rem;
+  }
+  .strength-content {
+    padding: 2.4rem 3.2rem;
+  }
+  .strength-level {
+    font-family: "Jet-Brains-Mono";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
+  .strength-display p {
+    font-family: "Jet-Brains-Mono";
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
+  .generate-button-container {
+    /* padding: 2.4rem 17.6rem; */
+    font-family: "Jet-Brains-Mono";
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-feature-settings:
+      "liga" off,
+      "clig" off;
+  }
 }
 /*Desktop display range*/
 @media (min-width: 63em) {
