@@ -89,7 +89,9 @@ generationButton.addEventListener("click", generatePassword);
 
 
 copyIcon.addEventListener("click", () => {
-    copyText.classList.remove("hidde-copy-text");
+    if (passwordLength.innerText > 0 && passwordOptions.length > 0) {
+        copyText.classList.remove("hidde-copy-text");
+    }
 
     navigator.clipboard.writeText(generatedPassword.innerText)
         .then(() => {
