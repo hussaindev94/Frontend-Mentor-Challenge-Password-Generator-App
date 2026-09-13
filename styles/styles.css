@@ -145,10 +145,6 @@ body {
 .hidde-copy-text {
   visibility: hidden;
 }
-/*Change it when styling user interactions*/
-.copy-icon path {
-  fill:;
-}
 /*------------------------------------------------------------*/
 .form-container {
   display: flex;
